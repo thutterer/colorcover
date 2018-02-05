@@ -1,0 +1,59 @@
+@font-face {
+    font-family: NotoColorEmoji;
+    src: url(NotoColorEmoji.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  background-color: #1A237E;
+  width: 600px;
+  height: 200px;
+
+  display: grid;
+  grid-template-columns: 200px 400px;
+  grid-template-rows: 150px 50px;
+}
+
+input {
+  background: inherit;
+  color: white;
+  border: none;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.icon, .title {
+}
+
+.icon {
+  grid-column: 1 / 1;
+  grid-row: 1 / 2;
+  text-align: center;
+  font-family: NotoColorEmoji;
+  font-size: 80px;
+}
+
+.title {
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.subtitle {
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+  font-size: 30px;
+}
+
+.colors {
+  font-size: 0; // to remove the markup inline whitespace
+}
+.color {
+  display: inline-block;
+  height: 50px;
+  width: 100px;
+  cursor: pointer;
+}
